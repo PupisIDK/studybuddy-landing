@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StudyBuddy</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container header__inner">
+  
+      <a href="#" class="logo">
+        <img src="images/logo.png" alt="StudyBuddy Logo">
+        <span>Study<b>Buddy</b></span>
+      </a>
+  
+      <nav class="nav">
+        <a href="#features">Функции</a>
+        <a href="#benefits">Преимущества</a>
+        <a href="#reviews">Отзывы</a>
+  
+        <a href="#registration" class="mobile-cta">
+          Скачать приложение
+        </a>
+      </nav>
+  
+      <a href="#registration" class="header__button">
+        Скачать приложение
+      </a>
+  
+      <button class="burger" type="button" aria-label="Открыть меню">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+  
+    </div>
+  </header>
+
+  <!-- MAIN -->
+
+  <main>
+
+    <!-- HERO -->
+
+    <section class="hero">
+      <div class="container hero__inner">
+
+        <div class="hero__content">
+
+          <p class="hero__subtitle">
+            Ваш умный помощник в учебе
+          </p>
+
+          <h1 class="hero__title">
+            Планируй учебу <br>
+            легко с StudyBuddy
+          </h1>
+
+          <p class="hero__text">
+            Контролируй задачи, дедлайны и прогресс —
+            всё в одном приложении.
+          </p>
+
+          <div class="hero__buttons">
+            <a href="#registration" class="hero__button">
+              Скачать сейчас
+            </a>
+          </div>
+
+          <div class="hero__users">
+            <span>10 000+</span>
+            студентов уже используют StudyBuddy
+          </div>
+
+        </div>
+
+        <div class="hero__image">
+          <div class="hero__circle"></div>
+
+          <img src="images/phone-hero.png" alt="StudyBuddy App">
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    
+    <section class="features" id="features">
+      <div class="container">
+    
+        <div class="section-heading">
+          <p class="section-subtitle">
+            Что умеет StudyBuddy
+          </p>
+    
+          <h2>
+            Основные функции приложения
+          </h2>
+    
+          <p>
+            StudyBuddy помогает студентам планировать,
+            отслеживать и достигать своих целей в учёбе.
+          </p>
+        </div>
+    
+        <div class="features__grid">
+    
+          <!-- CARD 1 -->
+    
+          <article class="feature-card">
+            <div class="feature-card__icon">📋</div>
+    
+            <h3>Планирование задач</h3>
+    
+            <p>
+              Создавай задачи, устанавливай приоритеты
+              и сроки, чтобы ничего не забыть.
+            </p>
+    
+            <a href="#" class="feature-more" data-title="Планирование задач"
+              data-text="Функция помогает создавать учебные задачи, задавать сроки, выбирать приоритет и контролировать выполнение.">
+              Подробнее
+            </a>
+          </article>
+    
+          <!-- CARD 2 -->
+    
+          <article class="feature-card">
+            <div class="feature-card__icon">🔔</div>
+    
+            <h3>Умные напоминания</h3>
+    
+            <p>
+              Получай уведомления о предстоящих дедлайнах
+              и важных учебных задачах.
+            </p>
+    
+            <a href="#" class="feature-more" data-title="Умные напоминания"
+              data-text="StudyBuddy отправляет напоминания о дедлайнах, важных задачах и предстоящих учебных событиях.">
+              Подробнее
+            </a>
+          </article>
+    
+          <!-- CARD 3 -->
+    
+          <article class="feature-card">
+            <div class="feature-card__icon">📈</div>
+    
+            <h3>Контроль прогресса</h3>
+    
+            <p>
+              Отслеживай выполнение задач
+              и анализируй свой прогресс.
+            </p>
+    
+            <a href="#" class="feature-more" data-title="Контроль прогресса"
+              data-text="Пользователь может видеть количество выполненных задач, отслеживать прогресс и анализировать свою продуктивность.">
+              Подробнее
+            </a>
+          </article>
+    
+          <!-- CARD 4 -->
+    
+          <article class="feature-card">
+            <div class="feature-card__icon">🤝</div>
+    
+            <h3>Совместная работа</h3>
+    
+            <p>
+              Делись задачами и проектами
+              с однокурсниками.
+            </p>
+    
+            <a href="#" class="feature-more" data-title="Совместная работа"
+              data-text="Функция позволяет делиться задачами и учебными проектами с однокурсниками для совместной работы.">
+              Подробнее
+            </a>
+          </article>
+    
+        </div>
+    
+      </div>
+    </section>
+
+    <!-- FEATURE MODAL -->
+    
+    <div class="modal" id="featureModal">
+      <div class="modal__content">
+        <button class="modal__close" type="button">
+          ×
+        </button>
+    
+        <h3 id="modalTitle"></h3>
+    
+        <p id="modalText"></p>
+      </div>
+    </div>
+
+    <!-- BENEFITS -->
+
+    <section class="benefits" id="benefits">
+      <div class="container">
+
+        <div class="section-heading">
+          <p class="section-subtitle">
+            Почему выбирают StudyBuddy
+          </p>
+
+          <h2>
+            Преимущества использования
+          </h2>
+
+          <p>
+            Мы создали всё, чтобы учёба стала проще
+            и эффективнее.
+          </p>
+        </div>
+
+        <div class="benefits__grid">
+
+          <article class="benefit-card">
+            <div class="benefit-card__number">01</div>
+
+            <h3>Экономия времени</h3>
+
+            <p>
+              Автоматизация задач и удобное планирование
+              помогают тратить меньше времени на рутину.
+            </p>
+          </article>
+
+          <article class="benefit-card">
+            <div class="benefit-card__number">02</div>
+
+            <h3>Простота интерфейса</h3>
+
+            <p>
+              Интуитивно понятный дизайн позволяет быстро
+              разобраться и сосредоточиться на учёбе.
+            </p>
+          </article>
+
+          <article class="benefit-card">
+            <div class="benefit-card__number">03</div>
+
+            <h3>Повышение мотивации</h3>
+
+            <p>
+              Отслеживай прогресс и вдохновляйся
+              каждым результатом.
+            </p>
+          </article>
+
+          <article class="benefit-card">
+            <div class="benefit-card__number">04</div>
+
+            <h3>Контроль дедлайнов</h3>
+
+            <p>
+              Никогда не пропускай важные сроки
+              благодаря уведомлениям.
+            </p>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="reviews" id="reviews">
+  <div class="container">
+
+    <div class="section-heading">
+      <p class="section-subtitle">
+        Нам доверяют студенты
+      </p>
+
+      <h2>
+        Отзывы наших пользователей
+      </h2>
+
+      <p>
+        Тысячи студентов уже используют StudyBuddy
+        и добиваются результатов в учёбе.
+      </p>
+    </div>
+
+    <div class="reviews__stats">
+
+      <div class="reviews__stat">
+        <h3>4.8 ★★★★★</h3>
+        <p>Средняя оценка</p>
+      </div>
+
+      <div class="reviews__stat">
+        <h3>10 000+</h3>
+        <p>Довольных студентов</p>
+      </div>
+
+    </div>
+
+    <div class="reviews__grid">
+
+      <!-- CARD 1 -->
+
+      <article class="review-card">
+        <div class="review-card__top">
+          <img src="images/logo.png" alt="">
+
+          <div>
+            <h4>Анна П.</h4>
+            <span>Студентка, 2 курс</span>
+          </div>
+        </div>
+
+        <div class="review-card__stars">
+          ★★★★★
+        </div>
+
+        <p>
+          StudyBuddy полностью изменил мой подход к учёбе.
+          Теперь я всегда успеваю выполнять задания вовремя.
+        </p>
+      </article>
+
+      <!-- CARD 2 -->
+
+      <article class="review-card">
+        <div class="review-card__top">
+          <img src="images/logo.png" alt="">
+
+          <div>
+            <h4>Иван С.</h4>
+            <span>Студент, 3 курс</span>
+          </div>
+        </div>
+
+        <div class="review-card__stars">
+          ★★★★★
+        </div>
+
+        <p>
+          Очень удобное приложение!
+          Учёба стала намного организованнее.
+        </p>
+      </article>
+
+      <!-- CARD 3 -->
+
+      <article class="review-card">
+        <div class="review-card__top">
+          <img src="images/logo.png" alt="">
+
+          <div>
+            <h4>Мария К.</h4>
+            <span>Студентка, 1 курс</span>
+          </div>
+        </div>
+
+        <div class="review-card__stars">
+          ★★★★★
+        </div>
+
+        <p>
+          Напоминания реально помогают
+          не пропускать важные задачи.
+        </p>
+      </article>
+
+      <!-- CARD 4 -->
+
+      <article class="review-card">
+        <div class="review-card__top">
+          <img src="images/logo.png" alt="">
+
+          <div>
+            <h4>Дмитрий Л.</h4>
+            <span>Студент, 4 курс</span>
+          </div>
+        </div>
+
+        <div class="review-card__stars">
+          ★★★★★
+        </div>
+
+        <p>
+          Отличное приложение для студентов
+          и совместной работы.
+        </p>
+      </article>
+
+    </div>
+
+  </div>
+</section>
+
+    <!-- REGISTRATION -->
+    
+    <section class="registration" id="registration">
+      <div class="container registration__inner">
+    
+        <div class="registration__content">
+    
+          <p class="section-subtitle">
+            Начните бесплатно
+          </p>
+    
+          <h2>
+            Создайте аккаунт
+            и учитесь эффективнее
+          </h2>
+    
+          <p>
+            Зарегистрируйтесь и получите доступ
+            ко всем функциям StudyBuddy.
+          </p>
+    
+        </div>
+    
+        <form class="registration__form" id="registrationForm">
+    
+          <label>
+            Имя
+    
+            <input type="text" id="nameInput" placeholder="Введите имя">
+          </label>
+    
+          <label>
+            Электронная почта
+    
+            <input type="email" id="emailInput" placeholder="Введите email">
+          </label>
+    
+          <button type="submit">
+            Получить доступ
+          </button>
+    
+          <p class="form-message"></p>
+    
+        </form>
+    
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+
+    <section class="final-cta">
+      <div class="container final-cta__inner">
+
+        <div class="final-cta__content">
+
+          <p class="section-subtitle">
+            Начни уже сегодня
+          </p>
+
+          <h2>
+            Готов сделать учёбу проще?
+          </h2>
+
+          <p>
+            Присоединяйся к тысячам студентов,
+            которые уже используют StudyBuddy.
+          </p>
+
+          <div class="final-cta__buttons">
+
+            <a href="#registration" class="final-cta__button">
+              Скачать сейчас
+            </a>
+
+            <a href="#registration" class="final-cta__button final-cta__button--light">
+              Создать аккаунт
+            </a>
+
+          </div>
+
+        </div>
+
+        <div class="final-cta__image">
+          <img src="images/phone-cta.png" alt="">
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+
+<footer class="footer">
+  <div class="footer__container">
+
+    <div class="footer__top">
+
+      <!-- BRAND -->
+
+      <div class="footer__brand">
+
+        <a href="#" class="logo">
+          <img src="images/logo.png" alt="">
+          <span>Study<b>Buddy</b></span>
+        </a>
+
+        <p>
+          Ваш умный помощник в учёбе.
+          Планируйте задачи, отслеживайте
+          прогресс и достигайте целей легко
+          с StudyBuddy.
+        </p>
+
+      </div>
+
+      <!-- LINKS -->
+
+      <div class="footer__links">
+
+        <div class="footer__column">
+          <h4>Приложение</h4>
+
+          <a href="#features">Функции</a>
+          <a href="#benefits">Преимущества</a>
+          <a href="#reviews">Отзывы</a>
+          <a href="#">Тарифы</a>
+          <a href="#registration">Скачать приложение</a>
+        </div>
+
+        <div class="footer__column">
+          <h4>Поддержка</h4>
+
+          <a href="#">Центр помощи</a>
+          <a href="#">Вопросы и ответы</a>
+          <a href="#">Связаться с нами</a>
+          <a href="#">Конфиденциальность</a>
+          <a href="#">Условия использования</a>
+        </div>
+
+        <div class="footer__column">
+          <h4>Компания</h4>
+
+          <a href="#">О нас</a>
+          <a href="#">Блог</a>
+          <a href="#">Карьера</a>
+          <a href="#">Партнёры</a>
+        </div>
+
+        <div class="footer__column">
+          <h4>Контакты</h4>
+
+          <a href="#">support@studybuddy.app</a>
+          <a href="#">8 (800) 123-45-67</a>
+          <a href="#">Москва, Россия</a>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">
+      © 2025 StudyBuddy. Все права защищены.
+    </div>
+
+  </div>
+</footer>
+  <script src="script.js"></script>
+</body>
+</html>
